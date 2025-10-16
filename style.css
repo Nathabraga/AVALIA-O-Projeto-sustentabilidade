@@ -1,0 +1,172 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    background-color: #dfeff3;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #007b83;
+}
+
+nav a {
+    text-decoration: none;
+    color: #005f73;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #0a9396;
+    transition: 0.3s;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeIn 1.5s ease;
+}
+
+.hero img {
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    color: #005f73;
+}
+
+.hero-text h2 {
+    color: #0a9396;
+    margin-bottom: 10px;
+}
+
+
+.explorar {
+    background-color: #f0fdfb;
+    padding: 40px;
+    text-align: center;
+}
+
+.explorar-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.imagem-box img {
+    width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.imagem-box img:hover {
+    transform: scale(1.05);
+}
+
+
+.posts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+    background-color: #e9f7f9;
+}
+
+.post {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    animation: fadeUp 1.5s ease;
+}
+
+.post img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.sobre-nos {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.bloco {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 10%;
+}
+
+.bloco.invertido {
+    flex-direction: row-reverse;
+}
+
+.bloco img {
+    width: 300px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.bloco img:hover {
+    transform: scale(1.05);
+}
+
+
+.galeria {
+    background-color: #f0fdfb;
+    padding: 40px;
+}
+
+.galeria .fotos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+footer {
+    background-color: #005f73;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
